@@ -8,6 +8,8 @@
 def is_leap(year):
     return True
 
+print('bttttttttong')
+
 
 # Task 3. You are given a dictionary with vehicles and their weights:
 vehicles = {'sedan': 1550, 'Pickup': 2000, 'bicycle': 20, 'TRUCK': 7000, 'motorcycle': 200, 'Minivan': 1700, 'SUV': 2500, 'van': 3500, 'Semi': 12000, 'Bus': 3000}
