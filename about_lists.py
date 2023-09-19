@@ -27,7 +27,7 @@ print(leap_years)
 # Task 3. You are given a dictionary with vehicles and their weights:
 vehicles = {'sedan': 1550, 'Pickup': 2000, 'bicycle': 20, 'TRUCK': 7000, 'motorcycle': 200, 'Minivan': 1700, 'SUV': 2500, 'van': 3500, 'Semi': 12000, 'Bus': 3000}
 
-# With single list comprehension select vehicle those weight is below 5000 kg
+# Withff single list comprehension select vehicle those weight is below 5000 kg
 
-lis2 = [i.upper() for i,j in vehicles.items() if j <5000]
-print(lis2)
+liss = [i.upper() for i,j in vehicles.items() if j <5000]
+print(liss)
