@@ -19,13 +19,14 @@ def is_leap(year):
                 return True
 
 
-[print(f"{year} - Is Leap Year") if is_leap(year) else print(f"{year} - Is not a Leap Year") for year in range(2000,2101)]
-
+leap_years = [year for year in range(2000, 2101) if is_leap(year)]
+print(leap_years)
 
 
 # Task 3. You are given a dictionary with vehicles and their weights:
 vehicles = {'sedan': 1550, 'Pickup': 2000, 'bicycle': 20, 'TRUCK': 7000, 'motorcycle': 200, 'Minivan': 1700, 'SUV': 2500, 'van': 3500, 'Semi': 12000, 'Bus': 3000}
-[print(name) for name in vehicles if vehicles[name] < 5000]
+vehicles_under = [name for name in vehicles if vehicles[name] < 5000]
+print(', '.join(vehicles_under))
 
 
 # With single list comprehension select vehicle those weight is below 5000 kg
