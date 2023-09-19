@@ -14,3 +14,5 @@ vehicles = {'sedan': 1550, 'Pickup': 2000, 'bicycle': 20, 'TRUCK': 7000, 'motorc
 
 # With single list comprehension select vehicle those weight is below 5000 kg
 # Convert names to upper-case within same list comprehension
+
+print('test')
