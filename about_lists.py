@@ -1,10 +1,7 @@
 # Task 1. Create a list containing squares for number from 1 up to 10.
 # Use list comprehension
-lis=[]
-for i in range(10):
-    num=i+1
-    num=num**2
-    lis.append(num)
+lis=[(i+1)**2 for i in range(10)]
+
 print(lis)
 
 # Task 2. Create a list containig numbers leap years in the future from 2000 up to 2100
@@ -22,10 +19,8 @@ def is_leap(year):
     else:
         return False
 
-leap_years=[]
-for i in range(2000,2101): 
-    if is_leap(i):
-        leap_years.append(i) 
+leap_years=[i for i in range(2000,2101) if is_leap(i)]
+
 print(leap_years)
 
 
@@ -34,10 +29,5 @@ vehicles = {'sedan': 1550, 'Pickup': 2000, 'bicycle': 20, 'TRUCK': 7000, 'motorc
 
 # With single list comprehension select vehicle those weight is below 5000 kg
 
-lis2 = list(vehicles.items())
-
-for i in range(len(lis2)):
-    if lis2[i][1]< 5000:
-        vehicles[lis2[i][0].upper()] = lis2[i][1]
-        vehicles.pop(lis2[i][0])
-print(vehicles)
+lis2 = [i.upper() for i,j in vehicles.items() if j <5000]
+print(lis2)
