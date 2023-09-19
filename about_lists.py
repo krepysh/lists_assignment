@@ -1,6 +1,7 @@
 # Task 1. Create a list containing squares for number from 1 up to 10.
 # Use list comprehension
 
+
 # Task 2. Create a list containig numbers leap years in the future from 2000 up to 2100
 # Use list comprehension with if condition
 # Hint: leap year is a year divisible by 4, but not by 100, unless it is divisible by 400
