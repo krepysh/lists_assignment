@@ -16,13 +16,6 @@ def is_leap(year):
     else:
         return False
 
-
-def is_leap(year):
-    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        return True
-    else:
-        return False
-
 leap_years = []
 
 y = int(input("Enter a year: "))
@@ -32,11 +25,10 @@ if is_leap(y):
 else:
     print(f"{y} is not a leap year.")
 
-for year in range(2000, 2100):
-    if is_leap(year):
-        leap_years.append(year)
+leap_years = [year for year in range(2000, 2101) if is_leap(year)]
 
 print("Leap years between 2000 and 2099:", leap_years)
+
 
 
 
